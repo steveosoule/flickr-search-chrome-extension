@@ -11,7 +11,6 @@ var initialize = function(){
 	$search.focus();
 
 	$search.on('input', function(){
-		console.log(this.value);
 		if( this.value.length ){
 			$row.removeClass('has-error');
 		}
@@ -19,7 +18,6 @@ var initialize = function(){
 
 	$form.on('submit', function(event){
 		event.preventDefault();
-		console.log('Searching for ' + $search.val() );
 
 		if( $search.val().length ){
 			searchFlickerAPI();
@@ -51,7 +49,6 @@ var searchFlickerAPI = function(){
 };
 
 	var jsonFlickrApi = function(jsonData){
-		console.log(jsonData);
 
 		var html = '';
 
