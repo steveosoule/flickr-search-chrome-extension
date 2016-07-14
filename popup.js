@@ -44,8 +44,8 @@ var searchFlickerAPI = function(){
 			api_key: atob('OGE3NGM2NTM5N2UzODZiNTk3N2M5NTcxMTMzNmZhMTc='),
 			text: $search.val(),
 			per_page: '25',
-			/*tags: 'kitten',
-			tag_mode: 'all'*/
+			tag_mode: 'all',
+			tags: ''
 		}
 	});
 };
