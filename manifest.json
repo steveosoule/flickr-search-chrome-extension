@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Flickr Image Search",
+  "description": "This extension will search Flickr's API",
+  "version": "1.0",
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "https://api.flickr.com/*"
+  ],
+  "content_security_policy":"script-src 'self' https://api.flickr.com; object-src 'self'"
+}
